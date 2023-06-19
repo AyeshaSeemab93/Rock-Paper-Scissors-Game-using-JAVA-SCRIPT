@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="./rock-paper-scissor.css">
+</head>
+
+<body>
+  
+
+  <p class="title">Rock Paper Scissor</p>
+
+<button class= "rock" onclick="playGame('Rock');">
+<img src="./Images/rock-emoji.png" alt="rock-emoji"></button>
+
+<button class= "paper" onclick="playGame('Paper');"><img src="./Images/paper-emoji.png" alt="paper-emoji"></button>
+
+<button class= "scissor" onclick="playGame('Scissor');"><img src="./Images/scissor-emoji.png" alt="scissor-emoji"></button>
+<p class="js-result game-result"></p>
+<p class="js-moves game-moves">
+ 
+</p>
+<p class="js-score"></p>
+
+
+
+<button class="reset-button" onclick="
+scores.wins = 0; scores.losses = 0; scores.ties = 0; 
+localStorage.removeItem('score');
+updateScoreElement()
+
+">Reset Score</button>
+
+  <script src="./rock-paper-scissor.js"></script>
+  
+</body>
+</html>
+
+<!--random number are between 0 to 1 in decimals
+  Rock = 0 to 1/3 
+  Paper = 1/3 to 2/3
+  Scissor = 2/3 to 1
+
+
+  logic of game: 
+  Rock beat Scissor
+  Scissor beat Paper
+  Paper beat rock
+
+  algoritham:
+  1: computer randomly select a move
+  2: compare the moves to get result  
+  3: update a score
+  4: display result
+-->
