@@ -1,3 +1,37 @@
+//REPLACING ONCLICK="" WITH .addEventListener();   onclick="playGame('Rock');"
+document.querySelector('.js-rock-button')
+  .addEventListener('click', ()=>{
+    playGame('Rock');
+    })
+document.querySelector('.js-paper-button')
+  .addEventListener('click', ()=>{
+    playGame('Paper');
+                    })                
+
+document.querySelector('.js-scissor-button')
+   .addEventListener('click', ()=>{
+    playGame('Scissor');
+                    })
+document.querySelector('.js-reset-button')
+    .addEventListener('click', ()=>{
+        scores.wins = 0; scores.losses = 0; scores.ties = 0; 
+        localStorage.removeItem('score');
+        updateScoreElement();
+               })
+//playing game using keyboard keys
+document.body.addEventListener('keydown', (event)=>{
+  if(event.key === 'r'){
+    playGame('Rock');
+  }
+  else if(event.key === 'p'){
+    playGame('Paper');
+  }
+  else if(event.key === 's'){
+    playGame('Scissor');
+  }
+ 
+})
+
 //helper function
 function pickComputerMove(){
   const randomNumber = Math.random();
