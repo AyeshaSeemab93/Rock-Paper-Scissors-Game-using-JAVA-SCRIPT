@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors Game using JavaScript
-
+https://ayeshaseemab93.github.io/Rock-Paper-Scissors-Game-using-JAVA-SCRIPT/
 ## Overview
 
 Welcome to the Rock-Paper-Scissors Game repository, implemented using JavaScript. This classic game allows users to play against the computer, with the outcome determined by the traditional rules of Rock, Paper, and Scissors.
@@ -61,12 +61,5 @@ JavaScript is used to manipulate the Document Object Model (DOM), updating HTML 
 
 User interactions, such as button clicks, are captured and handled using JavaScript event listeners. This allows for responsive and interactive web applications.
 
-## Contributing
-
-If you have suggestions, improvements, or would like to contribute, feel free to submit pull requests or open issues. Your contributions are valuable and appreciated.
-
-## License
-
-This Rock-Paper-Scissors Game is licensed under the [MIT License](LICENSE), allowing you to freely use, modify, and distribute the code.
 
 Enjoy playing the game!
