@@ -36,6 +36,9 @@ The logic of the Rock-Paper-Scissors game is straightforward:
 
 4. **Result Display:**
    - The result of the round is displayed to the user.
+     
+## Local Storage
+The game utilizes Local Storage, a web storage solution in JavaScript, to persistently store and retrieve data on the user's device. In this context, Local Storage is used to save and retrieve the game scores, allowing users to keep track of their performance even after refreshing the page.
 
 ## How to Play
 
